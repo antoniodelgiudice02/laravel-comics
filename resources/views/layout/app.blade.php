@@ -12,7 +12,7 @@
 
     <main>
         <div class="container">
-            <h1>Home</h1>
+            @yield('main-content')
         </div>
     </main>
 
