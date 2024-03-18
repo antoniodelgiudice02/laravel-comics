@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-  return view('home');
-});
+  return view('layout.app');
+})->name('home');
+
+Route::get('characters', function () {
+  return view('pages.characters');
+})->name('characters');
+
+Route::get('movies', function () {
+  return view('pages.movies');
+})->name('movies');
+
+Route::get('tv', function () {
+  return view('pages.tv');
+})->name('tv');
